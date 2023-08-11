@@ -9,16 +9,16 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Admin panel',
-  description: 'Allows admin users to configure stuff',
+  title: 'e-Glide',
+  description: 'Surf the web to glide faster'
 }
 
 interface IRootLayoutProps {
-  children: ReactNode,
+  children: ReactNode
   params: Params
 }
 
-const RootLayout:  FC<IRootLayoutProps> = ({ children, params }) => {
+const RootLayout: FC<IRootLayoutProps> = ({ children, params }) => {
   return (
     <html lang={params.lng}>
       <body className={inter.className}>

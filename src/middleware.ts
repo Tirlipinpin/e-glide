@@ -1,13 +1,13 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
- 
+
 const cookieName = 'lng'
 const fallbackLng = 'en'
 
 const languages = ['en', 'fr']
 
 // This function can be marked `async` if using `await` inside
-export function middleware(request: NextRequest) {
+export function middleware (request: NextRequest) {
   let lng
   if (request.cookies.has(cookieName)) {
     lng = request.cookies.get(cookieName)?.value
@@ -21,7 +21,8 @@ export function middleware(request: NextRequest) {
     !languages.some(loc => request.nextUrl.pathname.startsWith(`/${loc}`)) &&
     !request.nextUrl.pathname.startsWith('/_next')
   ) {
-    return NextResponse.redirect(new URL(`/${lng}${request.nextUrl.pathname}`, request.url))
+    console.log('hey', request)
+    return NextResponse.redirect(new URL(`/${lng}${request.nextUrl.pathname}${request.nextUrl.search}`, request.url))
   }
 
   if (request.headers.has('referer')) {
@@ -36,7 +37,7 @@ export function middleware(request: NextRequest) {
 
   return NextResponse.next()
 }
- 
+
 // See "Matching Paths" below to learn more
 export const config = {
   matcher: ['/((?!api|_next/static|.*\\..*|_next/image|assets|favicon.ico|sw.js).*)']

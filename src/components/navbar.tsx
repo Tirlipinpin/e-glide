@@ -2,10 +2,12 @@ import { FC } from 'react'
 import cx from 'classnames'
 import Link from 'next/link'
 import { getDictionary } from '@/app/[lng]/dictionaries/dictionaries'
+import { Button } from '@/designSystem/button/button'
+import { Searchbar } from './searchbar/searchbar'
 
 import styles from './navbar.module.scss'
 
-const getRouteForIndex = (index: string) => {
+const getRouteForIndex = (index: string): string => {
   switch (index) {
     case 'men': {
       return '/men'
@@ -29,7 +31,7 @@ export const Navbar: FC<INavbarProps> = async ({ lng }) => {
     <nav className={cx(styles.navbar)}>
       <Link href='/' className={styles.logo}>🏂</Link>
       <div className={styles.modules}>
-        {['men', 'women', 'about-us'].map((module) => (
+        {['men', 'women', 'search', 'about-us'].map((module) => (
           <Link
             className={styles.module}
             data-name={module}
@@ -39,6 +41,15 @@ export const Navbar: FC<INavbarProps> = async ({ lng }) => {
             {dict[module]}
           </Link>
         ))}
+      </div>
+      <Searchbar />
+      <div className={styles.queue}>
+        <Button shape='round'>
+          🛒
+        </Button>
+        <Button shape='round'>
+          🤷‍♂️
+        </Button>
       </div>
     </nav>
   )

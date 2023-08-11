@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "ts-standard",
+    "lint:fix": "ts-standard --fix"
   },
   "dependencies": {
     "@types/node": "20.1.2",
@@ -20,5 +21,8 @@
     "react-dom": "18.2.0",
     "sass": "^1.62.1",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "ts-standard": "^12.0.2"
   }
 }
