@@ -3,7 +3,7 @@ import cx from 'classnames'
 import Link from 'next/link'
 import { getDictionary } from '@/app/[lng]/dictionaries/dictionaries'
 import { Button } from '@/designSystem/button/button'
-import { Searchbar } from './searchbar/searchbar'
+import { Searchbar } from '../searchbar/searchbar'
 
 import styles from './navbar.module.scss'
 

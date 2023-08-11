@@ -2,7 +2,7 @@ import { FC, ReactNode } from 'react'
 import { Inter } from 'next/font/google'
 import { Params } from 'next/dist/shared/lib/router/utils/route-matcher'
 
-import { Navbar } from '@/components/navbar'
+import { Navbar } from '@/components/navbar/navbar'
 
 import './globals.css'
 
