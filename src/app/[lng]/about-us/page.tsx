@@ -2,9 +2,9 @@ import { FC } from 'react'
 
 const About: FC<{}> = () => {
   return (
-    <div>
+    <main className='page'>
       About
-    </div>
+    </main>
   )
 }
 

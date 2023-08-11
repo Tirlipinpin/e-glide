@@ -31,7 +31,7 @@ export const Navbar: FC<INavbarProps> = async ({ lng }) => {
     <nav className={cx(styles.navbar)}>
       <Link href='/' className={styles.logo}>🏂</Link>
       <div className={styles.modules}>
-        {['men', 'women', 'search', 'about-us'].map((module) => (
+        {['men', 'women', 'about-us'].map((module) => (
           <Link
             className={styles.module}
             data-name={module}

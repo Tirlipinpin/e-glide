@@ -11,9 +11,9 @@ const Search: FC<{}> = () => {
   console.log('search query', query)
 
   return (
-    <div>
+    <main className='page'>
       Search
-    </div>
+    </main>
   )
 }
 

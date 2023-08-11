@@ -2,9 +2,9 @@ import { FC } from 'react'
 
 const Women: FC<{}> = () => {
   return (
-    <div>
+    <main className='page'>
       Women
-    </div>
+    </main>
   )
 }
 
