@@ -2,6 +2,7 @@ import { FC, ReactNode } from 'react'
 import { Inter } from 'next/font/google'
 import { Params } from 'next/dist/shared/lib/router/utils/route-matcher'
 
+import { Footer } from '@/components/footer/footer'
 import { Navbar } from '@/components/navbar/navbar'
 
 import './globals.css'
@@ -24,6 +25,7 @@ const RootLayout: FC<IRootLayoutProps> = ({ children, params }) => {
       <body className={inter.className}>
         <Navbar lng={params.lng} />
         {children}
+        <Footer />
       </body>
     </html>
   )
