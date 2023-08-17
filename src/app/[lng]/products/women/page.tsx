@@ -1,26 +1,25 @@
 import { FC } from 'react'
-import { Params } from 'next/dist/shared/lib/router/utils/route-matcher'
-
 import { ItemsGrid } from '@/components/itemsGrid/itemsGrid'
+import { Params } from 'next/dist/shared/lib/router/utils/route-matcher'
 import { getDictionary } from '@/app/[lng]/dictionaries/dictionaries'
-import { FilterBar } from '@/components/filterBar/filterBar'
+
+import styles from './women.module.scss'
 
 import items from './items.json'
 
-interface IMenProps {
+interface IWomenProps {
   params: Params
 }
 
-const Men: FC<IMenProps> = async ({ params: { lng } }) => {
+const Women: FC<IWomenProps> = async ({ params: { lng } }) => {
   const dict = await getDictionary(lng)
 
   return (
     <main className='page'>
-      <h1>{dict.men}</h1>
-      <FilterBar dict={dict} />
+      <h1 className={styles.header}>{dict.women}</h1>
       <ItemsGrid items={items} />
     </main>
   )
 }
 
-export default Men
+export default Women

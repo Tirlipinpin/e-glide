@@ -10,10 +10,10 @@ import styles from './navbar.module.scss'
 const getRouteForIndex = (index: string): string => {
   switch (index) {
     case 'men': {
-      return '/men'
+      return '/products/men'
     }
     case 'women': {
-      return '/women'
+      return '/products/women'
     }
     default:
       return '/about-us'
