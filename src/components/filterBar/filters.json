@@ -2,6 +2,7 @@
   {
     "id": "64de58cefcaac8f4afb0c6df",
     "label": "occaecat Lorem",
+    "type": "selectable",
     "filters": [
       {
         "id": "64de58ce3bd1b1397b25bdd1",
@@ -210,8 +211,14 @@
     ]
   },
   {
+    "id": "64de58cetmozbtgrz049ez24",
+    "label": "Price",
+    "type": "range"
+  },
+  {
     "id": "64de58ceb9088ec5ab57b4ee",
     "label": "fugiat sunt",
+    "type": "selectable",
     "filters": [
       {
         "id": "64de58ce2d8c8dbfc5df25c4",
@@ -270,6 +277,7 @@
   {
     "id": "64de58ceb024ae0408b6e08a",
     "label": "in nisi",
+    "type": "selectable",
     "filters": [
       {
         "id": "64de58cefaaf3d31aac80ccd",
@@ -380,6 +388,7 @@
   {
     "id": "64de58cee4e1ca0d4f7dc88b",
     "label": "culpa enim",
+    "type": "selectable",
     "filters": [
       {
         "id": "64de58ce6ce9eb5574fbe3cd",
@@ -618,6 +627,7 @@
   {
     "id": "64de58cebe3ac56fd99c7076",
     "label": "officia incididunt",
+    "type": "selectable",
     "filters": [
       {
         "id": "64de58cee5ac518c2b0004fa",
@@ -768,6 +778,7 @@
   {
     "id": "64de58cee4e52e4f526593ed",
     "label": "ad est",
+    "type": "selectable",
     "filters": [
       {
         "id": "64de58ce73c553b228db07b2",
@@ -922,6 +933,7 @@
   {
     "id": "64de58ce94fcf8ee20543cce",
     "label": "et adipisicing",
+    "type": "selectable",
     "filters": [
       {
         "id": "64de58ce5bf2171c6ea7fcf4",
@@ -1120,6 +1132,7 @@
   {
     "id": "64de58ce03d90996e4fbe010",
     "label": "nostrud commodo",
+    "type": "selectable",
     "filters": [
       {
         "id": "64de58ce75ff97a75912023d",

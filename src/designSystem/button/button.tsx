@@ -14,7 +14,7 @@ export const Button: FC<IButtonProps> = ({
   children,
   className,
   onClick,
-  shape = 'square',
+  shape = 'square'
 }) => {
   return (
     <button

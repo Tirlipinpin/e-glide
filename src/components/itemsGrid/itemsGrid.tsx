@@ -27,7 +27,7 @@ export const ItemsGrid: FC<IItemsGridProps> = ({ items }) => {
             label={item.label}
             price={item.price}
             cover={item.cover}
-           />
+          />
         </Link>
       ))}
     </div>

@@ -17,7 +17,7 @@ const Women: FC<IWomenProps> = async ({ params: { lng } }) => {
 
   return (
     <main className='page'>
-      <h1>{dict['women']}</h1>
+      <h1>{dict.women}</h1>
       <section className={styles.content}>
         <FilterBar dict={dict} />
         <ItemsGrid items={items} />
