@@ -25,7 +25,7 @@ export function middleware (request: NextRequest) {
   }
 
   if (request.headers.has('referer')) {
-    const refererUrl = new URL(request.headers.get('referer'))
+    const refererUrl = new URL(request.headers.get('referer')!)
     const lngInReferer = languages.find((l) => refererUrl.pathname.startsWith(`/${l}`))
     const response = NextResponse.next()
     if (lngInReferer) {
