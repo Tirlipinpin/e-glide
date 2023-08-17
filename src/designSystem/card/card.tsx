@@ -16,8 +16,8 @@ export const Card: FC<ICardProps> = ({ cover, label, description, price }) => {
       <span className={styles.title}>{label}</span>
       <span className={styles.footer}>
         <small>{description}</small>
-        <small>{Intl.NumberFormat('fr', { style: 'currency', currency: 'EUR' }).format(price)}</small>
       </span>
+      <div className={styles.price}>{Intl.NumberFormat('fr', { style: 'currency', currency: 'EUR' }).format(price)}</div>
     </div>
   )
 }
