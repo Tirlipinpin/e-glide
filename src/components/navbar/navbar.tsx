@@ -44,10 +44,10 @@ export const Navbar: FC<INavbarProps> = async ({ lng }) => {
       </div>
       <Searchbar />
       <div className={styles.queue}>
-        <Button shape='round'>
-          🛒
+        <Button className={styles.userButton} shape='round'>
+          🥡
         </Button>
-        <Button shape='round'>
+        <Button className={styles.userButton} shape='round'>
           🤷‍♂️
         </Button>
       </div>

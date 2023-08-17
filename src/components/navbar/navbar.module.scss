@@ -40,6 +40,8 @@
 
       transition: opacity 150ms ease-in-out, background-color 150ms ease-in-out;
 
+      font-weight: 600;
+
       &:hover {
         opacity: .5;
       }
@@ -51,5 +53,10 @@
     display: flex;
 
     gap: .8rem;
+
+    .userButton {
+      background-color: black;
+      color: white;
+    }
   }
 }
