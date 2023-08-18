@@ -12,6 +12,20 @@
 
   transition: box-shadow 150ms ease-in-out;
 
+  .loadingImage, .cover {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+
+  .loadingTitle {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .loadingFooter {
+    padding: 0.5rem;
+  }
+
   .title, .footer {
     padding: 0.5rem;
   }
